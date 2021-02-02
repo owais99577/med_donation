@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <style>
+            body{
+                background-image:url(../static/img/med24.gif);
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }.centered {
+                position: absolute;
+                padding-top: -25px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
+    
+           </style>     
+    </head>    
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/don-list">DONATION REQUEST</a></li>
+                    <li><a href="/reg-ngo">REGISTERED NGO</a></li>
+                    <li><a href="/user">LOGOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block content %}
+        <div class="container">
+            <div class="centered"><h1>Need For Donation:</h1>
+                <h3>There are many different scenarios for medicine donations – such as emergency aid, long-term aid, or assistance to national health systems or to individual health facilities. <br>
+                Donations may come from pharmaceutical companies (directly or through private voluntary organizations),<br>
+                they may come in the form of aid from governments, or they may be donations aimed directly at single health‐care facilities.<br>
+                The intended beneficiaries of donations of medicines range from individual facilities to entire health systems.<br>
+                Although there are legitimate differences between these scenarios, many basic rules for appropriate donation practice apply to them all.</h3>
+            </div>    
+        </div>
+
+        {% endblock %}
+    </body>  
+</html>          

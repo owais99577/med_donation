@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <style>
+            body{
+                background-image:url(../static/img/med20.jpg);
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+           </style>     
+
+    </head>    
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/reg-ngos">NGO LIST</a></li>
+                    <li><a href="/admin-donlist">REQUESTED MEDICINE LIST</a></li>
+                    <li><a href="/user-list">DONOR'S LIST</a></li>
+                    <li><a href="/ngoadding">ADD NGO</a></li>
+                    <li><a href="/admin">LOGOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+    </html>

@@ -1,0 +1,67 @@
+{% include "newnav.html" %}
+{% block content %}
+<html>
+   <head>
+      <style>
+    #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  padding-top: 10px;
+  margin-top: 25px;
+  margin-left: 100px;
+}
+#customers thead{
+   background-color: #4CAF50;
+   color: white;
+   font-size: larger;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+      </style>
+   </head>
+   <body>
+      <table id="customers">
+         <thead>
+            <td>FullName</td>
+            <td>Email</td>
+            <td>Contact No</td>
+            <td>Address</td>
+            <td>BrandName</td>
+            <td>GenericName</td>
+            <td>DONATE</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td> {{ row["name"]}}</td>
+               <td> {{ row["email"]}}</td>
+               <td> {{ row["num"]}}</td>
+               <td> {{ row["addr"]}}</td>	
+               <td> {{ row["med"]}}</td>
+               <td> {{ row["gen"]}}</td>
+               <td>  <button type="submit" class="btn"><a href="/user-don">Donate</a></button></td>
+            </tr>
+         {% endfor %}
+      </table>
+
+   </body>
+</html>
+
+{% endblock %}

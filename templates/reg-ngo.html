@@ -1,0 +1,46 @@
+{% include "newnav.html" %}
+{% block content %}
+<html>
+   <head>
+      <style>
+        body{
+          background-image: none;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        #customers {font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;width: 100%;
+        margin-top: 20px;}
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+          }
+          
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+        #customers tr:hover {background-color: #ddd;}
+        #customers th {padding-top: 12px;padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;color: white;}
+      </style>
+   </head>
+   <body>
+      <table id="customers">
+          <thead>
+              <th>SNo</th>
+              <th>Full Name</th>
+              <th>Contact Number</th>
+              <th>Address</th>
+              <th>Requirements</th>
+          </thead>
+          <tr>
+              <td>1</td>
+              <td>NGO-1</td>
+              <td>0000</td>
+              <td>Street Name, City Name, District Name, State Name, Pincode</td>
+              <td>adult size pampers, 10 tabs paracetamol , unused clothes</td>
+          </tr>
+      </table>
+   </body>
+</html>
+{% endblock %}

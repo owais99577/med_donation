@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block content %}
+<head>
+    <style>
+    body {background-image:url(../static/img/med8.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .box-1{
+      border-radius: 25px;
+      padding: 10px;
+      margin-left: 100px;
+      margin-top:50px;
+      width: 500px;
+      height: 400px;
+      text-align: center;
+      background: rgb(0, 0, 0); 
+      background: rgba(0, 0, 0, 0.5); 
+      color: #f1f1f1;}
+  .box-1 h1{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color:blanchedalmond;}
+
+  .box-1 h2{color:white;}
+
+  .box-2
+  {
+      width: 500px;
+      height: 50px;
+      text-align: center;
+      margin-left:110px;
+      background: rgb(0, 0, 0); 
+      background: rgba(0, 0, 0, 0.5); 
+      color: #f1f1f1;}
+  .box-2 h3
+  {
+      font-family: 'Times New Roman', Times, serif;}
+
+.box-1{
+  border-radius: 25px;
+}    
+.box-2{
+  border-radius: 30px;
+  background: rgb(0, 0, 0); 
+      background: rgba(0, 0, 0, 0.5); 
+      color: #f1f1f1;
+}
+.box-2 h1{
+    font-family: 'Times New Roman';
+}
+.box-link{
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    margin-left:110px;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+}
+.box-link a{
+    color: #f1f1f1;
+}
+    </style>
+    <div class="container">
+        <div class="box-1">
+            <h1>E-HEALTH CARE </h1>
+            <H2>Unused Medicine Donation</H2>  
+            <h2>" The measure of life is not its Duration, but its Donation "</h2>
+            <h1><bold>WELCOME TO DONATION COMMUNITY</bold></h1>
+            <h1><bold>ONLINE UNUSED MEDICINE DONATION SYSTEM</bold></h1>
+        </div>
+    </div>
+    <div class="box-2">    
+       <h3><strong>“ Remember that the happiest people are not those getting more, but those giving more. ”</strong></h3>
+    </div>
+</head>
+<body>
+    <div class="box-link">
+        <p>For NGO registration <a href="/ngo-req">click here</a></p>
+    </div>
+</body>    
+{% endblock %}   

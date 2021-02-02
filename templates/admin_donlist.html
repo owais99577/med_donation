@@ -1,0 +1,68 @@
+{% include 'adminnav.html' %}
+{% block content %}
+<html>
+   <head>
+      <style>
+          body{
+                background-image:url(../static/img/med20.jpg);
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    #customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+#customers thead{
+ background-color: #4CAF50;
+ color: white;
+ font-size: larger;
+ font-family: 'Times New Roman';  
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+      </style>
+   </head>
+   <body>
+      <table id="customers">
+         <thead>
+            <td>FullName</td>
+            <td>Email</td>
+            <td>Contact No</td>
+            <td>Address</td>
+            <td>BrandName</td>
+            <td>GenericName</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td> {{ row["name"]}}</td>
+               <td> {{ row["email"]}}</td>
+               <td> {{ row["num"]}}</td>
+               <td> {{ row["addr"]}}</td>	
+               <td> {{ row["med"]}}</td>
+               <td> {{ row["gen"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+   </body>
+</html>
+{% endblock %}

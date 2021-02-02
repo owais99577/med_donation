@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+{% block content %}
+<head>
+    <style>
+        body {background-image:url(../static/img/med15.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;}
+            .flex-container{
+  display: flex;
+}
+.box-3{
+  border-radius: 25px;
+  padding: 10px;
+  margin-left: 30px;
+  margin-top:50px;
+  height: 230px;
+  text-align: center;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 30%;
+}
+.box-3 h3{
+    color: azure;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box-3 h1{
+  font-family: cursive;
+  color:blanchedalmond;
+}
+.box-4{
+  background-color: slategrey;
+  border-radius: 25px;
+  color: azure;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top:100px;
+  width: 25%;
+  height: 230px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+}
+.box-4 h1{
+  font-family: cursive;
+  color:blanchedalmond;
+}
+.box-4 h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box-5{
+  background-color: slategrey;
+  border-radius: 25px;
+  color: azure;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top:150px;
+  width: 25%;
+  height: 200px;
+  text-align: center;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+}
+.box-5 h1{
+  font-family: cursive;
+  color:blanchedalmond;
+}
+.box-5 h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+    </style>
+    <div class="flex-container">
+        <div class="box-3">
+            <h1>WHY MEDICINE : </h1>
+            <h3>Medicines and health products are important for addressing health problems and improve quality of lives.<br>
+            nearly 2 billion people have no acess to basic medicine . causing a cascade of preventing misesry and suffering</h3>
+        </div> 
+        <div class="box-4">
+            <h1>OUR VISION :</h1>
+            <h3>Our website drives the future of healthcare by connecting people with surplus medications.<br>
+            Our system is built to ensure compliances and provide full liability protection</h3>
+        </div>   
+        <div class="box-5">
+            <h1>JOIN US :</h1>
+            <h3>You can join us easily with different aspects to became a part of the impact you can be a DONATOR,NGO etc.<br></h3>
+        </div>      
+    </div>   
+</head>
+
+{% endblock %}
